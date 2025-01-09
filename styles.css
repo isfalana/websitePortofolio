@@ -10,7 +10,7 @@ html {
 }
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
 }
@@ -79,7 +79,7 @@ nav {
   transition: 0.2s linear;
 }
 .nav-container .contact-btn a {
-  color: white;
+  color: black;
   transition: 0.3s linear;
 }
 .nav-container .contact-btn:hover,
@@ -90,6 +90,7 @@ nav {
 .nav-container .links a:hover {
   color: rgb(109, 67, 0);
 }
+
 .dropdown {
   z-index: 100;
   position: absolute;
