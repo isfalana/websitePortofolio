@@ -138,21 +138,15 @@ section {
 .main-container .image,
 .about-container .image,
 .edu-container .image {
-  z-index: 1;
+  z-index: -1;
   width: 40%;
 }
 .main-container .image img,
 .about-container .image img,
 .edu-container .image img {
   width: 80%;
-  transition: transform 0.3s ease, filter 0.3s ease;
 }
-.main-container .image img:hover,
-.about-container .image img:hover,
-.edu-container .image img:hover {
-  width: 80%;
-  transform: scale(1.2);
-}
+
 .main-container .content,
 .about-container .about-content,
 .edu-container .edu-content {
