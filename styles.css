@@ -127,7 +127,8 @@ section {
 
 /* main style */
 .main-container,
-.about-container {
+.about-container,
+.edu-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -135,26 +136,38 @@ section {
   align-items: center;
 }
 .main-container .image,
-.about-container .image {
-  z-index: -1;
+.about-container .image,
+.edu-container .image {
+  z-index: 1;
   width: 40%;
 }
 .main-container .image img,
-.about-container .image img {
+.about-container .image img,
+.edu-container .image img {
   width: 80%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.main-container .image img:hover,
+.about-container .image img:hover,
+.edu-container .image img:hover {
+  width: 80%;
+  transform: scale(1.2);
 }
 .main-container .content,
-.about-container .about-content {
+.about-container .about-content,
+.edu-container .edu-content {
   color: black;
   width: 40%;
   min-height: 100px;
 }
 .content h1,
-.about-content h1 {
+.about-content h1,
+.edu-content h1 {
   font-size: clamp(1rem, 2rem + 5vw, 3rem);
 }
 .content h1 span,
-.about-content h1 span {
+.about-content h1 span,
+.edu-content h1 span {
   color: rgb(109, 67, 0);
   text-shadow: 0 0 10px rgb(109, 67, 0);
 }
@@ -203,7 +216,8 @@ section {
   }
 }
 .content p,
-.about-content p {
+.about-content p,
+.edu-content p {
   font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
   margin: 10px 0;
 }
@@ -228,7 +242,8 @@ section {
   filter: drop-shadow(0 0 10px rgb(109, 67, 0));
 }
 .content button,
-.about-content button {
+.about-content button,
+.edu-content button {
   width: 40%;
   height: 6vh;
   margin: 30px;
@@ -242,7 +257,8 @@ section {
   transition: 0.2s linear;
 }
 .content button:hover,
-.about-content button:hover {
+.about-content button:hover,
+.edu-content button:hover {
   scale: 1.1;
   color: rgb(109, 67, 0);
   border: 2px solid rgb(109, 67, 0);
@@ -261,7 +277,8 @@ section {
     font-size: 1.5rem;
   }
   .main-container,
-  .about-container {
+  .about-container,
+  .edu-container {
     display: flex;
     flex-direction: column;
   }
@@ -273,7 +290,8 @@ section {
     display: block;
   }
   .main-container .content,
-  .about-container .about-content {
+  .about-container .about-content,
+  .edu-container .edu-content {
     width: 80%;
   }
   .social-links i {
@@ -285,7 +303,8 @@ section {
     color: white;
   }
   .main-container .image,
-  .about-container .image {
+  .about-container .image,
+  .edu-container .image {
     width: 80%;
     margin-bottom: 0px;
   }
