@@ -126,42 +126,30 @@ section {
 }
 
 /* main style */
-.main-container,
-.about-container,
-.edu-container {
+.main-container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.main-container .image,
-.about-container .image,
-.edu-container .image {
+.main-container .image {
   z-index: -1;
   width: 40%;
 }
-.main-container .image img,
-.about-container .image img,
-.edu-container .image img {
+.main-container .image img {
   width: 80%;
 }
 
-.main-container .content,
-.about-container .about-content,
-.edu-container .edu-content {
+.main-container .content {
   color: black;
   width: 40%;
   min-height: 100px;
 }
-.content h1,
-.about-content h1,
-.edu-content h1 {
-  font-size: clamp(1rem, 2rem + 5vw, 3rem);
+.content h1 {
+  font-size: clamp(1rem, 2rem + 2vw, 1.5rem);
 }
-.content h1 span,
-.about-content h1 span,
-.edu-content h1 span {
+.content h1 span {
   color: rgb(109, 67, 0);
   text-shadow: 0 0 10px rgb(109, 67, 0);
 }
