@@ -267,7 +267,7 @@ section {
 
   .skill-content {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .nav-container .links {
     display: none;
@@ -292,5 +292,13 @@ section {
   .skill-container .image {
     width: 80%;
     margin-bottom: 0px;
+  }
+
+  .card {
+    width: 100px;
+  }
+
+  .img-card {
+    width: 75px;
   }
 }
