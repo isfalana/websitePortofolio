@@ -126,67 +126,32 @@ section {
 }
 
 /* main style */
-.main-container,
-.about-container,
-.edu-container {
+.main-container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.main-container .image,
-.about-container .image,
-.edu-container .image {
+.main-container .image {
   z-index: -1;
   width: 40%;
 }
-.main-container .image img,
-.about-container .image img,
-.edu-container .image img {
+.main-container .image img {
   width: 80%;
 }
 
-.main-container .content,
-.about-container .about-content,
-.edu-container .edu-content {
+.main-container .content {
   color: black;
   width: 40%;
   min-height: 100px;
 }
-.content h1,
-.about-content h1,
-.edu-content h1 {
+.content h1 {
   font-size: clamp(1rem, 2rem + 5vw, 3rem);
 }
-.content h1 span,
-.about-content h1 span,
-.edu-content h1 span {
+.content h1 span {
   color: rgb(109, 67, 0);
   text-shadow: 0 0 10px rgb(109, 67, 0);
-}
-.content .typewriter {
-  font-weight: 600;
-  font-size: clamp(1rem, 1rem + 5vw, 2rem);
-}
-.content .typewriter span {
-  color: rgb(109, 67, 0);
-  font-size: 2.5rem;
-  text-shadow: 0 0 5px rgb(109, 67, 0);
-  position: relative;
-  transition: 0.3s linear;
-}
-.typewriter span::before {
-  content: "Developer";
-  animation: words 15s infinite;
-}
-.typewriter span::after {
-  content: "";
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  border-left: 3px solid black;
-  animation: cursor 0.6s linear infinite;
 }
 
 /* about style */
@@ -195,23 +160,7 @@ section {
     border-left: 3px solid #b74b4b;
   }
 }
-@keyframes words {
-  0%,
-  33% {
-    content: "Developer";
-  }
-  34%,
-  66% {
-    content: "Designer";
-  }
-  67%,
-  100% {
-    content: "Researcher";
-  }
-}
-.content p,
-.about-content p,
-.edu-content p {
+.content p {
   font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
   margin: 10px 0;
 }
@@ -235,9 +184,7 @@ section {
   background-color: rgb(109, 67, 0);
   filter: drop-shadow(0 0 10px rgb(109, 67, 0));
 }
-.content button,
-.about-content button,
-.edu-content button {
+.content button {
   width: 40%;
   height: 6vh;
   margin: 30px;
@@ -250,9 +197,7 @@ section {
   border-radius: 5px;
   transition: 0.2s linear;
 }
-.content button:hover,
-.about-content button:hover,
-.edu-content button:hover {
+.content button:hover {
   scale: 1.1;
   color: rgb(109, 67, 0);
   border: 2px solid rgb(109, 67, 0);
@@ -270,9 +215,7 @@ section {
     left: 15px;
     font-size: 1.5rem;
   }
-  .main-container,
-  .about-container,
-  .edu-container {
+  .main-container {
     display: flex;
     flex-direction: column;
   }
@@ -283,9 +226,7 @@ section {
   .cancel {
     display: block;
   }
-  .main-container .content,
-  .about-container .about-content,
-  .edu-container .edu-content {
+  .main-container .content {
     width: 80%;
   }
   .social-links i {
@@ -296,9 +237,7 @@ section {
   .cancel {
     color: white;
   }
-  .main-container .image,
-  .about-container .image,
-  .edu-container .image {
+  .main-container .image {
     width: 80%;
     margin-bottom: 0px;
   }
